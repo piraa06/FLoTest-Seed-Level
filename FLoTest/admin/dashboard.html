@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="dashboard-page">
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="logo-box-sidebar">Fl</div>
+            <h2>FloTest</h2>
+        </div>
+        
+        <div class="sidebar-section-title">MENU UTAMA</div>
+        
+        <nav class="sidebar-menu">
+            <a href="#menu-statistik" class="sidebar-link">Dashboard</a>
+            <a href="#menu-mentor" class="sidebar-link">Mentor</a>
+            <a href="#menu-menti" class="sidebar-link">Menti</a>
+            <a href="#menu-tes" class="sidebar-link">Tes</a>
+            <hr class="sidebar-divider">
+            <a href="../index.html" class="sidebar-link logout-link">Logout</a>
+        </nav>
+    </aside>
+
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Dashboard Admin</h1>
+            <p>Selamat datang kembali, Admin</p>
+        </header>
+
+        <main class="dashboard-main">
+
+            <div id="menu-statistik" class="page-content content-active-default">
+                <div class="welcome-box">
+                    <h3>Selamat Datang Kembali, Admin!</h3>
+                    <p>Berikut adalah ringkasan aktivitas dan jumlah data yang terdaftar di dalam sistem sistem saat ini.</p>
+                </div>
+
+                <article>
+                    <h2>Statistik Sistem</h2>
+                    <table>
+                        <tr>
+                            <th>Data Kelola</th>
+                            <th>Jumlah Terdaftar</th>
+                        </tr>
+                        <tr>
+                            <td>Mentor</td>
+                            <td>2 Mentor</td>
+                        </tr>
+                        <tr>
+                            <td>Menti (Siswa)</td>
+                            <td>5 Menti</td>
+                        </tr>
+                        <tr>
+                            <td>Ujian / Tes</td>
+                            <td>3 Tes</td>
+                        </tr>
+                    </table>
+                </article>
+            </div>
+
+            <article id="menu-mentor" class="page-content">
+                <h2>Daftar Mentor</h2>
+                <table>
+                    <tr>
+                        <th>Nama Mentor</th>
+                        <th>Email</th>
+                        <th>Spesialisasi Program</th>
+                    </tr>
+                    <tr>
+                        <td>Budi Santoso</td>
+                        <td>budi@flotest.com</td>
+                        <td>Web Development (Laravel)</td>
+                    </tr>
+                    <tr>
+                        <td>Siti Aminah</td>
+                        <td>siti@flotest.com</td>
+                        <td>UI/UX Design & Research</td>
+                    </tr>
+                </table>
+            </article>
+
+            <article id="menu-menti" class="page-content">
+                <h2>Daftar Menti</h2>
+                <table>
+                    <tr>
+                        <th>Nama Menti</th>
+                        <th>Kelas / Program</th>
+                        <th>Status Sistem</th>
+                    </tr>
+                    <tr>
+                        <td>Ahmad Fauzi</td>
+                        <td>Laravel Backend</td>
+                        <td><span class="badge-status">Aktif</span></td>
+                    </tr>
+                    <tr>
+                        <td>Rizky Amelia</td>
+                        <td>Frontend React</td>
+                        <td><span class="badge-status">Aktif</span></td>
+                    </tr>
+                    <tr>
+                        <td>Deni Setiawan</td>
+                        <td>UI/UX Fundamental</td>
+                        <td><span class="badge-status">Aktif</span></td>
+                    </tr>
+                    <tr>
+                        <td>Citra Lestari</td>
+                        <td>Web Development Dasar</td>
+                        <td><span class="badge-status">Aktif</span></td>
+                    </tr>
+                    <tr>
+                        <td>Fajar Hidayat</td>
+                        <td>Laravel Backend</td>
+                        <td><span class="badge-status">Aktif</span></td>
+                    </tr>
+                </table>
+            </article>
+
+            <article id="menu-tes" class="page-content">
+                <h2>Bank Soal & Tes</h2>
+                <table>
+                    <tr>
+                        <th>Judul Modul Ujian</th>
+                        <th>Jumlah Soal</th>
+                        <th>Durasi Waktu</th>
+                    </tr>
+                    <tr>
+                        <td>Ujian Dasar HTML & CSS</td>
+                        <td>20 Soal</td>
+                        <td>45 Menit</td>
+                    </tr>
+                    <tr>
+                        <td>Kuis Logika Pemrograman PHP</td>
+                        <td>15 Soal</td>
+                        <td>30 Menit</td>
+                    </tr>
+                    <tr>
+                        <td>Evaluasi Desain UI/UX</td>
+                        <td>25 Soal</td>
+                        <td>60 Menit</td>
+                    </tr>
+                </table>
+            </article>
+
+            <div style="display: none !important;">
+                <form>
+                    <input type="text" name="admin-hidden-input">
+                    <textarea name="admin-hidden-textarea"></textarea>
+                    <select name="admin-hidden-select"><option>Hidden</option></select>
+                </form>
+            </div>
+
+        </main>
+
+        <footer class="dashboard-footer">
+            <p>FloTest © 2026</p>
+        </footer>
+    </div>
+
+</body>
+</html>
