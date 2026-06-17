@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — FloTest</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="login-page">
+
+<div class="login-container">
+    <div class="login-header">
+        <div class="logo-box">Fl</div>
+        <h1>FloTest</h1>
+        <p>Platform tes online untuk mentor dan menti</p>
+    </div>
+
+    <div class="login-card">
+        <h2>Masuk ke Akun</h2>
+        <p class="subtitle">Gunakan email, password, dan role Anda untuk melanjutkan</p>
+
+        <form>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" value="" placeholder="Masukkan email">
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" value="" placeholder="Masukkan password">
+            </div>
+
+            <div class="form-group">
+                <label>Masuk sebagai</label>
+                
+                <div class="dropdown-wrapper">
+                    <input type="radio" name="role_select" id="role-none" class="radio-role" checked>
+                    <input type="radio" name="role_select" id="role-admin" class="radio-role">
+                    <input type="radio" name="role_select" id="role-mentor" class="radio-role">
+                    <input type="radio" name="role_select" id="role-menti" class="radio-role">
+                    
+                    <input type="checkbox" id="dropdown-trigger" class="dropdown-state">
+                    
+                    <label for="dropdown-trigger" class="dropdown-select-label">
+                        <span class="text-default">-- Pilih Role --</span>
+                        <span class="text-admin">Admin</span>
+                        <span class="text-mentor">Mentor</span>
+                        <span class="text-menti">Menti</span>
+                    </label>
+
+                    <div class="dropdown-options-list">
+                        <label for="role-admin" class="option-row" onclick="document.getElementById('dropdown-trigger').checked = false;">Admin</label>
+                        <label for="role-mentor" class="option-row" onclick="document.getElementById('dropdown-trigger').checked = false;">Mentor</label>
+                        <label for="role-menti" class="option-row" onclick="document.getElementById('dropdown-trigger').checked = false;">Menti</label>
+                    </div>
+
+                    <div class="submit-area">
+                        <button type="button" class="btn-placeholder">Masuk</button>
+                        <a href="admin/dashboard.html" class="btn-actual link-admin">Masuk</a>
+                        <a href="mentor/dashboard.html" class="btn-actual link-mentor">Masuk</a>
+                        <a href="menti/dashboard.html" class="btn-actual link-menti">Masuk</a>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
