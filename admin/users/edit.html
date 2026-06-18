@@ -1,27 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Data - FloTest</title>
+    <title>Edit User - FloTest</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body class="dashboard-page">
 
-    <nav>
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="logo-box-sidebar">Fl</div>
+            <h2>FloTest</h2>
+        </div>
+        <div class="sidebar-section-title">MENU UTAMA</div>
+        <nav class="sidebar-menu">
+            <a href="../dashboard.html" class="sidebar-link">Dashboard</a>
+            <a href="index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Users</a>
+            <a href="../dashboard.html" class="sidebar-link">Tests</a>
+            <a href="../dashboard.html" class="sidebar-link">Questions</a>
+            <hr class="sidebar-divider">
+            <a href="../../index.html" class="sidebar-link logout-link">Logout</a>
         </nav>
+    </aside>
 
     <div class="dashboard-container">
-        <header>
-            </header>
+        <header class="dashboard-header">
+            <h1>Edit Data User</h1>
+            <p>Perbarui informasi akun pengguna yang dipilih</p>
+        </header>
 
         <main class="dashboard-main">
-            </main>
-
-        <footer>
-            <p>&copy; 2026 FloTest. All rights reserved.</p>
-        </footer>
+            <section class="page-content content-active-default" style="position: relative;">
+                <h2>Form Perubahan User</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" value="Budi Utomo (Mentor 1)">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" value="budi@flotest.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Role</label>
+                        <select>
+                            <option value="Admin">Admin</option>
+                            <option value="Mentor" selected>Mentor</option>
+                            <option value="Menti">Menti</option>
+                        </select>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="index.html"><button type="button" style="background: #2563eb; color: white;">Update</button></a>
+                        <a href="index.html"><button type="button" style="background: #e2e8f0; color: #475569;">Batal</button></a>
+                    </div>
+                </form>
+            </section>
+        </main>
     </div>
 
 </body>
-</html>
+</html> 

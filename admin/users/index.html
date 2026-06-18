@@ -1,26 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Data - FloTest</title>
+    <title>Manajemen Users - FloTest</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body class="dashboard-page">
 
-    <nav>
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="logo-box-sidebar">Fl</div>
+            <h2>FloTest</h2>
+        </div>
+        <div class="sidebar-section-title">MENU UTAMA</div>
+        <nav class="sidebar-menu">
+            <a href="../dashboard.html" class="sidebar-link">Dashboard</a>
+            <a href="index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Users</a>
+            <a href="../dashboard.html" class="sidebar-link">Tests</a>
+            <a href="../dashboard.html" class="sidebar-link">Questions</a>
+            <hr class="sidebar-divider">
+            <a href="../../index.html" class="sidebar-link logout-link">Logout</a>
         </nav>
+    </aside>
 
     <div class="dashboard-container">
-        <header>
-            </header>
+        <header class="dashboard-header">
+            <h1>Manajemen Users</h1>
+            <p>Kelola data pengguna sistem FloTest (Admin, Mentor, dan Menti)</p>
+        </header>
 
         <main class="dashboard-main">
-            </main>
+            <section class="page-content content-active-default" style="position: relative;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <h2>Daftar Users</h2>
+                    <a href="create.html"><button type="button" style="background: #2563eb; color: white;">+ Tambah User</button></a>
+                </div>
 
-        <footer>
-            <p>&copy; 2026 FloTest. All rights reserved.</p>
-        </footer>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th style="width: 160px;">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sahrul Admin</td>
+                            <td>admin@flotest.com</td>
+                            <td><span class="badge-status" style="background: #fee2e2; color: #dc2626;">Admin</span></td>
+                            <td>
+                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
+                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Budi Utomo (Mentor 1)</td>
+                            <td>budi@flotest.com</td>
+                            <td><span class="badge-status" style="background: #eff6ff; color: #2563eb;">Mentor</span></td>
+                            <td>
+                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
+                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Siti Aminah (Mentor 2)</td>
+                            <td>siti@flotest.com</td>
+                            <td><span class="badge-status" style="background: #eff6ff; color: #2563eb;">Mentor</span></td>
+                            <td>
+                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
+                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Andi Wijaya</td>
+                            <td>andi@gmail.com</td>
+                            <td><span class="badge-status" style="background: #f0fdf4; color: #16a34a;">Menti</span></td>
+                            <td>
+                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
+                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Citra Lestari</td>
+                            <td>citra@gmail.com</td>
+                            <td><span class="badge-status" style="background: #f0fdf4; color: #16a34a;">Menti</span></td>
+                            <td>
+                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
+                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dewi Sartika</td>
+                            <td>dewi@gmail.com</td>
+                            <td><span class="badge-status" style="background: #f0fdf4; color: #16a34a;">Menti</span></td>
+                            <td>
+                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
+                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Eko Prasetyo</td>
+                            <td>eko@gmail.com</td>
+                            <td><span class="badge-status" style="background: #f0fdf4; color: #16a34a;">Menti</span></td>
+                            <td>
+                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
+                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fany Amelia</td>
+                            <td>fany@gmail.com</td>
+                            <td><span class="badge-status" style="background: #f0fdf4; color: #16a34a;">Menti</span></td>
+                            <td>
+                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
+                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="margin-top: 20px;">
+                    <a href="../dashboard.html"><button type="button" style="background: #e2e8f0; color: #475569;">&larr; Kembali ke Dashboard</button></a>
+                </div>
+            </section>
+        </main>
     </div>
 
 </body>
