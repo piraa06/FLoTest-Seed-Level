@@ -2,8 +2,9 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Hasil Tes - Menti</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Ujian Menti - FloTest</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="dashboard-page">
 
@@ -12,11 +13,11 @@
             <div class="logo-box-sidebar">Fl</div>
             <h2>FloTest</h2>
         </div>
-        <div class="sidebar-section-title">MENU UTAMA</div>
+        <div class="sidebar-section-title">MENU MENTI</div>
         <nav class="sidebar-menu">
             <a href="dashboard.html" class="sidebar-link">Dashboard</a>
-            <a href="take-tests.html" class="sidebar-link">Kerjakan Tes</a>
-            <a href="result.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Hasil Tes</a>
+            <a href="take-test.html" class="sidebar-link">Take Test</a>
+            <a href="result.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">View Results</a>
             <hr class="sidebar-divider">
             <a href="../index.html" class="sidebar-link logout-link">Logout</a>
         </nav>
@@ -24,28 +25,56 @@
 
     <div class="dashboard-container">
         <header class="dashboard-header">
-            <h1>Hasil Evaluasi Tes</h1>
-            <p>Periksa kembali jawaban salah dan benar dari riwayat pengerjaan Anda</p>
+            <h1>Hasil Evaluasi Ujian</h1>
+            <p>Review performa dan detail lembar jawaban Anda</p>
         </header>
 
         <main class="dashboard-main">
-            <div class="page-content" style="opacity: 1; pointer-events: auto; position: relative;">
-                <h2>Hasil Evaluasi Tes</h2>
-                <div class="score-box" style="background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; margin: 20px 0 25px 0; display: flex; align-items: center; gap: 15px;">
-                    <span style="font-size: 14px; font-weight: 600; color: #64748b;">Nilai Anda:</span>
-                    <span style="font-size: 28px; font-weight: 800; color: #2563eb;">80</span>
+            <div class="menti-content-show">
+                
+                <div class="score-card">
+                    <span>Nama Tes</span>
+                    <h2>HTML Basic Test</h2>
+                    <hr class="score-card-divider">
+                    <span>NILAI AKHIR ANDA</span>
+                    <h1>80 <span>/ 100</span></h1>
+                    <p>🎉 Bagus sekali! Anda telah melewati ambang batas kelulusan.</p>
                 </div>
 
-                <h3>Daftar Soal & Koreksi</h3>
-                <div class="review-list" style="margin-top: 15px; padding: 15px; background: #f0fdf4; border-left: 4px solid #16a34a; border-radius: 6px;">
-                    <p style="font-size: 14px; font-weight: 600; color: #14532d; margin-bottom: 8px;">Soal No. 1: Apa fungsi HTML?</p>
-                    <div style="font-size: 13px; font-weight: bold;">
-                        <p style="color: #16a34a; margin-bottom: 4px;">✓ Jawaban Anda: A</p>
-                        <p style="color: #16a34a;">✓ Jawaban Benar: A</p>
-                    </div>
+                <div class="flex-space-between">
+                    <h2>Detail Jawaban</h2>
+                    <a href="dashboard.html"><button type="button" class="btn-secondary">&larr; Kembali ke Dashboard</button></a>
                 </div>
+                
+                <div class="review-item">
+                    <div class="status-badge status-correct"><span>✅ Benar</span></div>
+                    <p class="review-question-text">
+                        1. Tag HTML manakah yang benar untuk membuat kelompok teks menjadi sebuah paragraf baru?
+                    </p>
+                    <div class="review-option">A. &lt;lb&gt;</div>
+                    <div class="review-option">B. &lt;break&gt;</div>
+                    <div class="review-option option-correct-highlight">C. &lt;p&gt; (Jawaban Anda & Benar)</div>
+                    <div class="review-option">D. &lt;paragraph&gt;</div>
+                </div>
+
+                <div class="review-item">
+                    <div class="status-badge status-wrong"><span>❌ Salah</span></div>
+                    <p class="review-question-text">
+                        2. Atribut mana yang digunakan untuk menentukan link tujuan pada sebuah tag jangkar (&lt;a&gt;)?
+                    </p>
+                    <div class="review-option option-wrong-highlight">A. src (Jawaban Anda)</div>
+                    <div class="review-option option-correct-highlight">B. href (Kunci Jawaban Benar)</div>
+                    <div class="review-option">C. link</div>
+                    <div class="review-option">D. alt</div>
+                </div>
+
             </div>
         </main>
+        
+        <footer class="dashboard-footer">
+            <p>FloTest © 2026</p>
+        </footer>
     </div>
+
 </body>
 </html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengerjakan Ujian - FloTest</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="dashboard-page">
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="logo-box-sidebar">Fl</div>
+            <h2>FloTest</h2>
+        </div>
+        <div class="sidebar-section-title">MENU MENTI</div>
+        <nav class="sidebar-menu">
+            <a href="dashboard.html" class="sidebar-link">Dashboard</a>
+            <a href="take-test.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Take Test</a>
+            <a href="result.html" class="sidebar-link">View Results</a>
+            <hr class="sidebar-divider">
+            <a href="../index.html" class="sidebar-link logout-link">Logout</a>
+        </nav>
+    </aside>
+
+    <div class="dashboard-container">
+        <header class="dashboard-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+            <div>
+                <h1 style="font-size: 24px;">HTML Basic Test</h1>
+                <p>Status: <strong style="color: #2563eb;">Ujian Sedang Berlangsung</strong></p>
+            </div>
+            <div style="text-align: right; min-width: 220px;">
+                <span style="font-size: 14px; color: #64748b;">Progress Pengerjaan: <strong>20%</strong></span>
+                <div style="width: 100%; background: #e2e8f0; height: 8px; border-radius: 4px; margin-top: 5px; overflow: hidden;">
+                    <div style="width: 20%; background: #2563eb; height: 100%;"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-main">
+            <div class="menti-content-show">
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px;">
+                    <h3 style="color: #1e293b; margin: 0; font-size: 16px;">SOAL NOMOR: <span style="background: #2563eb; color: white; padding: 3px 12px; border-radius: 4px; font-size: 16px; font-weight: bold;">1</span> dari 5 Soal</h3>
+                    <span style="font-size: 14px; color: #ef4444; font-weight: bold;">⏱️ Sisa Waktu: 00:59:12</span>
+                </div>
+
+                <div style="margin-bottom: 35px;">
+                    <p style="font-size: 18px; color: #1e293b; line-height: 1.6; margin-bottom: 25px; font-weight: 500;">
+                        Tag HTML manakah yang benar untuk membuat kelompok teks menjadi sebuah paragraf baru?
+                    </p>
+
+                    <label class="option-container">
+                        <input type="radio" name="question_1" value="A" class="option-radio">
+                        <span>A. &lt;lb&gt;</span>
+                    </label>
+
+                    <label class="option-container">
+                        <input type="radio" name="question_1" value="B" class="option-radio">
+                        <span>B. &lt;break&gt;</span>
+                    </label>
+
+                    <label class="option-container selected-mock">
+                        <input type="radio" name="question_1" value="C" class="option-radio" checked>
+                        <span style="color: #1e40af;">C. &lt;p&gt; (Terpilih)</span>
+                    </label>
+
+                    <label class="option-container">
+                        <input type="radio" name="question_1" value="D" class="option-radio">
+                        <span>D. &lt;paragraph&gt;</span>
+                    </label>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #e2e8f0; padding-top: 25px; flex-wrap: wrap; gap: 15px;">
+                    <div>
+                        <button type="button" class="btn-disabled" style="margin-right: 10px;" disabled>&larr; Sebelumnya</button>
+                        <button type="button" style="background: #2563eb; color: white;">Selanjutnya &rarr;</button>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; gap: 20px;">
+                        <a href="dashboard.html" style="color: #64748b; text-decoration: none; font-size: 14px; font-weight: 500;">Kembali ke Dashboard</a>
+                        <a href="result.html"><button type="button" style="background: #10b981; color: white; font-weight: bold; margin: 0; padding: 10px 20px;">Submit Ujian</button></a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        
+        <footer class="dashboard-footer" style="text-align: center; margin-top: 50px; color: #64748b; font-size: 14px;">
+            <p>FloTest © 2026</p>
+        </footer>
+    </div>
+
+</body>
+</html>

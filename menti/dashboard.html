@@ -2,7 +2,8 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard Menti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Menti - FloTest</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="dashboard-page">
@@ -12,11 +13,11 @@
             <div class="logo-box-sidebar">Fl</div>
             <h2>FloTest</h2>
         </div>
-        <div class="sidebar-section-title">MENU UTAMA</div>
+        <div class="sidebar-section-title">MENU MENTI</div>
         <nav class="sidebar-menu">
             <a href="dashboard.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Dashboard</a>
-            <a href="take-tests.html" class="sidebar-link">Kerjakan Tes</a>
-            <a href="result.html" class="sidebar-link">Hasil Tes</a>
+            <a href="take-test.html" class="sidebar-link">Take Test</a>
+            <a href="result.html" class="sidebar-link">View Results</a>
             <hr class="sidebar-divider">
             <a href="../index.html" class="sidebar-link logout-link">Logout</a>
         </nav>
@@ -25,34 +26,38 @@
     <div class="dashboard-container">
         <header class="dashboard-header">
             <h1>Dashboard Menti</h1>
-            <p>Selamat datang kembali di panel siswa, Menti</p>
+            <p>Selamat datang di ruang belajar dan evaluasi mandiri Anda</p>
         </header>
 
         <main class="dashboard-main">
-            <div class="page-content" style="opacity: 1; pointer-events: auto; position: relative;">
-                <div class="welcome-box">
-                    <h3>Halo, Selamat Datang di FloTest!</h3>
-                    <p>Silakan pilih menu di sidebar untuk mulai mengerjakan tes online yang tersedia atau melihat hasil evaluasi ujian Anda.</p>
+            <div class="menti-content-show">
+                
+                <div class="menti-welcome-box">
+                    <h3>Semangat Belajar!</h3>
+                    <p>Silakan pilih menu di sebelah kiri untuk mulai mengambil ujian baru atau melihat riwayat nilai yang telah Anda raih.</p>
                 </div>
-                <article>
-                    <h2>Ringkasan Progres Belajar</h2>
-                    <table>
-                        <tr>
-                            <th>Status Aktivitas Ujian</th>
-                            <th>Jumlah Modul</th>
-                        </tr>
-                        <tr>
-                            <td>Tes Tersedia (Belum Dikerjakan)</td>
-                            <td>3 Tes Konten</td>
-                        </tr>
-                        <tr>
-                            <td>Tes Selesai (Sudah Dikerjakan)</td>
-                            <td>1 Tes Selesai</td>
-                        </tr>
-                    </table>
-                </article>
+
+                <h2 style="font-size: 20px; color: #1e293b; margin-bottom: 15px;">Statistik Belajar Anda</h2>
+                
+                <div class="menti-stats-grid">
+                    <div class="menti-card menti-card-available">
+                        <span>Available Tests</span>
+                        <h2>1 <span>Ujian Tersedia</span></h2>
+                    </div>
+
+                    <div class="menti-card menti-card-completed">
+                        <span>Completed Tests</span>
+                        <h2>4 <span>Selesai Dikerjakan</span></h2>
+                    </div>
+                </div>
+
             </div>
         </main>
+        
+        <footer class="dashboard-footer" style="text-align: center; margin-top: 50px; color: #64748b; font-size: 14px;">
+            <p>FloTest © 2026</p>
+        </footer>
     </div>
+
 </body>
 </html>
