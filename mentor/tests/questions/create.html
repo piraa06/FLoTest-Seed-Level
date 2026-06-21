@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Soal - FloTest Admin</title>
+    <title>Tambah Soal Baru (Mentor) - FloTest</title>
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 <body class="dashboard-page">
@@ -13,12 +13,11 @@
             <div class="logo-box-sidebar">Fl</div>
             <h2>FloTest</h2>
         </div>
-        <div class="sidebar-section-title">MENU UTAMA</div>
+        <div class="sidebar-section-title">MENU MENTOR</div>
         <nav class="sidebar-menu">
             <a href="../../dashboard.html" class="sidebar-link">Dashboard</a>
-            <a href="../../users/index.html" class="sidebar-link">Users</a>
             <a href="../index.html" class="sidebar-link">Tests</a>
-            <a href="index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Questions</a>
+            <a href="index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Create Test</a>
             <hr class="sidebar-divider">
             <a href="../../../index.html" class="sidebar-link logout-link">Logout</a>
         </nav>
@@ -26,40 +25,41 @@
 
     <div class="dashboard-container">
         <header class="dashboard-header">
-            <h1>Edit Soal</h1>
-            <p>Perbarui teks pertanyaan atau pilihan opsi jawaban</p>
+            <h1>Tambah Soal Baru</h1>
+            <p>Tuliskan teks pertanyaan beserta 4 pilihan opsi jawaban pilihan ganda</p>
         </header>
 
         <main class="dashboard-main">
             <section class="page-content content-active-default" style="position: relative;">
-                <h2>Form Perubahan Soal</h2>
+                <h2>Form Pertanyaan Baru</h2>
                 <form>
                     <div class="form-group">
                         <label>Question Text</label>
-                        <textarea rows="3">Apa kepanjangan dari singkatan HTML?</textarea>
+                        <textarea placeholder="Tuliskan teks pertanyaan soal..." rows="3"></textarea>
                     </div>
                     
                     <div class="form-group">
                         <label>Pilihan A</label>
-                        <input type="text" value="Hyper Text Markup Language">
+                        <input type="text" placeholder="Jawaban opsi A...">
                     </div>
                     <div class="form-group">
                         <label>Pilihan B</label>
-                        <input type="text" value="High Text Markup Language">
+                        <input type="text" placeholder="Jawaban opsi B...">
                     </div>
                     <div class="form-group">
                         <label>Pilihan C</label>
-                        <input type="text" value="Hyper Text Multiple Language">
+                        <input type="text" placeholder="Jawaban opsi C...">
                     </div>
                     <div class="form-group">
                         <label>Pilihan D</label>
-                        <input type="text" value="Home Tool Markup Language">
+                        <input type="text" placeholder="Jawaban opsi D...">
                     </div>
 
                     <div class="form-group">
                         <label>Jawaban Benar</label>
                         <select>
-                            <option value="A" selected>A</option>
+                            <option value="">-- Pilih Kunci Jawaban Yang Benar --</option>
+                            <option value="A">A</option>
                             <option value="B">B</option>
                             <option value="C">C</option>
                             <option value="D">D</option>
@@ -67,7 +67,7 @@
                     </div>
 
                     <div style="margin-top: 15px;">
-                        <a href="index.html"><button type="button" style="background: #2563eb; color: white;">Update</button></a>
+                        <a href="index.html"><button type="button" style="background: #2563eb; color: white;">Submit</button></a>
                         <a href="index.html"><button type="button" style="background: #e2e8f0; color: #475569;">Batal</button></a>
                     </div>
                 </form>

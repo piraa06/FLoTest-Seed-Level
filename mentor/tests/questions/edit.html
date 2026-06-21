@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Soal - FloTest Admin</title>
+    <title>Edit Soal (Mentor) - FloTest</title>
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 <body class="dashboard-page">
@@ -13,12 +13,11 @@
             <div class="logo-box-sidebar">Fl</div>
             <h2>FloTest</h2>
         </div>
-        <div class="sidebar-section-title">MENU UTAMA</div>
+        <div class="sidebar-section-title">MENU MENTOR</div>
         <nav class="sidebar-menu">
             <a href="../../dashboard.html" class="sidebar-link">Dashboard</a>
-            <a href="../../users/index.html" class="sidebar-link">Users</a>
             <a href="../index.html" class="sidebar-link">Tests</a>
-            <a href="index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Questions</a>
+            <a href="index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Create Test</a>
             <hr class="sidebar-divider">
             <a href="../../../index.html" class="sidebar-link logout-link">Logout</a>
         </nav>
@@ -26,8 +25,8 @@
 
     <div class="dashboard-container">
         <header class="dashboard-header">
-            <h1>Edit Soal</h1>
-            <p>Perbarui teks pertanyaan atau pilihan opsi jawaban</p>
+            <h1>Edit Butir Soal</h1>
+            <p>Perbarui teks pertanyaan atau sesuaikan opsi kunci jawaban</p>
         </header>
 
         <main class="dashboard-main">
@@ -36,31 +35,31 @@
                 <form>
                     <div class="form-group">
                         <label>Question Text</label>
-                        <textarea rows="3">Apa kepanjangan dari singkatan HTML?</textarea>
+                        <textarea rows="3">Apa fungsi utama dari tag format paragraf (&lt;p&gt;) pada HTML?</textarea>
                     </div>
                     
                     <div class="form-group">
                         <label>Pilihan A</label>
-                        <input type="text" value="Hyper Text Markup Language">
+                        <input type="text" value="Membuat teks berukuran besar">
                     </div>
                     <div class="form-group">
                         <label>Pilihan B</label>
-                        <input type="text" value="High Text Markup Language">
+                        <input type="text" value="Menentukan struktur teks menjadi sebuah paragraf baru">
                     </div>
                     <div class="form-group">
                         <label>Pilihan C</label>
-                        <input type="text" value="Hyper Text Multiple Language">
+                        <input type="text" value="Menyisipkan gambar ke dalam layout dokumen">
                     </div>
                     <div class="form-group">
                         <label>Pilihan D</label>
-                        <input type="text" value="Home Tool Markup Language">
+                        <input type="text" value="Membuat link tautan halaman">
                     </div>
 
                     <div class="form-group">
                         <label>Jawaban Benar</label>
                         <select>
-                            <option value="A" selected>A</option>
-                            <option value="B">B</option>
+                            <option value="A">A</option>
+                            <option value="B" selected>B</option>
                             <option value="C">C</option>
                             <option value="D">D</option>
                         </select>
@@ -76,4 +75,4 @@
     </div>
 
 </body>
-</html>
+</html> 

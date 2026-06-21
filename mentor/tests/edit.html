@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Tes - Mentor</title>
+    <title>Edit Test (Mentor) - FloTest</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body class="dashboard-page">
@@ -13,11 +13,11 @@
             <div class="logo-box-sidebar">Fl</div>
             <h2>FloTest</h2>
         </div>
-        <div class="sidebar-section-title">MENU UTAMA</div>
+        <div class="sidebar-section-title">MENU MENTOR</div>
         <nav class="sidebar-menu">
             <a href="../dashboard.html" class="sidebar-link">Dashboard</a>
-            <a href="index.html" class="sidebar-link">Daftar Tes</a>
-            <a href="create.html" class="sidebar-link">Buat Tes</a>
+            <a href="index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Tests</a>
+            <a href="create.html" class="sidebar-link">Create Test</a>
             <hr class="sidebar-divider">
             <a href="../../index.html" class="sidebar-link logout-link">Logout</a>
         </nav>
@@ -25,16 +25,38 @@
 
     <div class="dashboard-container">
         <header class="dashboard-header">
-            <h1>Edit Modul Tes</h1>
-            <p>Perbarui konfigurasi paket soal ujian</p>
+            <h1>Edit Informasi Ujian</h1>
+            <p>Modifikasi detail paket ujian yang Anda kelola</p>
         </header>
 
         <main class="dashboard-main">
             <section class="page-content content-active-default" style="position: relative;">
-                <h2>Form Edit Tes (Kosong)</h2>
-                <p>Kerangka layout dasar untuk memperbarui data modul ujian lama.</p>
+                <h2>Form Perubahan Test</h2>
+                <form>
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" value="HTML Basic Test">
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea rows="4">Evaluasi pemahaman dasar semantik tag HTML, elemen form, struktur dokumen, serta dasar pembuatan tabel web.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Status</label>
+                        <select>
+                            <option value="Draft">Draft</option>
+                            <option value="Published" selected>Published</option>
+                            <option value="Archived">Archived</option>
+                        </select>
+                    </div>
+                    <div style="margin-top: 15px;">
+                        <a href="index.html"><button type="button" style="background: #2563eb; color: white;">Update</button></a>
+                        <a href="index.html"><button type="button" style="background: #e2e8f0; color: #475569;">Batal</button></a>
+                    </div>
+                </form>
             </section>
         </main>
     </div>
+
 </body>
 </html>

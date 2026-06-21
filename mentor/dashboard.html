@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Mentor</title>
+    <title>Dashboard Mentor - FloTest</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body class="dashboard-page">
@@ -13,12 +13,12 @@
             <div class="logo-box-sidebar">Fl</div>
             <h2>FloTest</h2>
         </div>
-        <div class="sidebar-section-title">MENU UTAMA</div>
+        <div class="sidebar-section-title">MENU MENTOR</div>
         <nav class="sidebar-menu">
             <a href="dashboard.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Dashboard</a>
             
-            <a href="tests/index.html" class="sidebar-link">Daftar Tes</a>
-            <a href="tests/create.html" class="sidebar-link">Buat Tes</a>
+            <a href="tests/index.html" class="sidebar-link">Tests</a>
+            <a href="tests/create.html" class="sidebar-link">Create Test</a>
             
             <hr class="sidebar-divider">
             <a href="../index.html" class="sidebar-link logout-link">Logout</a>
@@ -28,37 +28,37 @@
     <div class="dashboard-container">
         <header class="dashboard-header">
             <h1>Dashboard Mentor</h1>
-            <p>Selamat datang kembali, Mentor Panel</p>
+            <p>Selamat datang kembali di panel pendidik FloTest</p>
         </header>
 
         <main class="dashboard-main">
             <div class="page-content" style="opacity: 1; pointer-events: auto; position: relative;">
-                <div class="welcome-box">
-                    <h3>Selamat Datang, Mentor!</h3>
-                    <p>Melalui panel ini, Anda dapat memantau data ringkasan tes dan mengelola soal ujian online secara berkala.</p>
+                
+                <div class="welcome-box" style="margin-bottom: 25px;">
+                    <h3>Selamat Bertugas, Mentor!</h3>
+                    <p>Melalui halaman ini, Anda dapat memantau kuantitas ujian dan soal yang Anda kelola di dalam sistem.</p>
                 </div>
 
-                <article>
-                    <h2>Ringkasan</h2>
-                    <table>
-                        <tr>
-                            <th>Kategori Ringkasan</th>
-                            <th>Total Terdata</th>
-                        </tr>
-                        <tr>
-                            <td>Jumlah Tes</td>
-                            <td>3 Modul Tes</td>
-                        </tr>
-                        <tr>
-                            <td>Jumlah Soal</td>
-                            <td>33 Butir Soal</td>
-                        </tr>
-                    </table>
-                </article>
+                <h2>Statistik Kelas</h2>
+                
+                <div style="display: flex; gap: 20px; margin-top: 15px; flex-wrap: wrap;">
+                    
+                    <div style="flex: 1; min-width: 250px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; border-left: 5px solid #10b981;">
+                        <span style="font-size: 14px; color: #64748b; font-weight: bold; text-transform: uppercase;">Total Tests</span>
+                        <h2 style="font-size: 28px; margin: 10px 0 0 0; color: #1e293b;">2 <span style="font-size: 16px; font-weight: normal; color: #64748b;">Paket Ujian</span></h2>
+                    </div>
+
+                    <div style="flex: 1; min-width: 250px; background: #f8fafc; border: 1px solid #e2e8f0; padding: 20px; border-radius: 8px; border-left: 5px solid #f59e0b;">
+                        <span style="font-size: 14px; color: #64748b; font-weight: bold; text-transform: uppercase;">Total Questions</span>
+                        <h2 style="font-size: 28px; margin: 10px 0 0 0; color: #1e293b;">25 <span style="font-size: 16px; font-weight: normal; color: #64748b;">Butir Soal</span></h2>
+                    </div>
+
+                </div>
+
             </div>
         </main>
-
-        <footer class="dashboard-footer">
+        
+        <footer class="dashboard-footer" style="text-align: center; margin-top: 50px; color: #64748b; font-size: 14px;">
             <p>FloTest © 2026</p>
         </footer>
     </div>

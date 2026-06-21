@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manajemen Soal - FloTest Admin</title>
+    <title>Manajemen Soal (Mentor) - FloTest</title>
+    <!-- Mundur 3 folder untuk mengambil CSS utama -->
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 <body class="dashboard-page">
@@ -13,12 +14,12 @@
             <div class="logo-box-sidebar">Fl</div>
             <h2>FloTest</h2>
         </div>
-        <div class="sidebar-section-title">MENU UTAMA</div>
+        <div class="sidebar-section-title">MENU MENTOR</div>
         <nav class="sidebar-menu">
             <a href="../../dashboard.html" class="sidebar-link">Dashboard</a>
-            <a href="../../users/index.html" class="sidebar-link">Users</a>
-            <a href="../index.html" class="sidebar-link">Tests</a>
-            <a href="index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Questions</a>
+            <!-- Perbaikan: Menu Tests sekarang aktif (berwarna biru) karena Questions adalah bagian dari modul Tests -->
+            <a href="../index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Tests</a>
+            <a href="../create.html" class="sidebar-link">Create Test</a>
             <hr class="sidebar-divider">
             <a href="../../../index.html" class="sidebar-link logout-link">Logout</a>
         </nav>
@@ -26,65 +27,56 @@
 
     <div class="dashboard-container">
         <header class="dashboard-header">
-            <h1>Soal Ujian: HTML Basic Test</h1>
-            <p>Kelola butir pertanyaan, pilihan ganda, dan kunci jawaban ujian</p>
+            <h1>Kelola Butir Soal Ujian</h1>
+            <p>Penyusunan pertanyaan, pilihan ganda, dan kunci jawaban paket ujian Anda</p>
         </header>
 
         <main class="dashboard-main">
             <section class="page-content content-active-default" style="position: relative;">
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                    <h2>Daftar Pertanyaan (10 Soal Terdata)</h2>
+                    <h2>Daftar Pertanyaan (Sesuai Kuota Paket)</h2>
                     <a href="create.html"><button type="button" style="background: #2563eb; color: white;">+ Tambah Soal</button></a>
                 </div>
 
+                <!-- Sesuai Perintah Kolom: Number, Question Text, Actions -->
                 <table>
                     <thead>
                         <tr>
-                            <th style="width: 60px;">Number</th>
+                            <th style="width: 80px; text-align: center;">Number</th>
                             <th>Question Text</th>
-                            <th style="width: 150px;">Type</th>
                             <th style="width: 160px;">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>1</td>
-                            <td>Apa kepanjangan dari singkatan HTML?</td>
-                            <td><span class="badge-status" style="background: #eff6ff; color: #2563eb;">Pilihan Ganda</span></td>
+                            <td style="text-align: center;">1</td>
+                            <td>Apa fungsi utama dari tag format paragraf (&lt;p&gt;) pada HTML?</td>
                             <td>
                                 <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
                                 <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
                             </td>
                         </tr>
                         <tr>
-                            <td>2</td>
-                            <td>Tag HTML mana yang digunakan untuk membuat judul terbesar?</td>
-                            <td><span class="badge-status" style="background: #eff6ff; color: #2563eb;">Pilihan Ganda</span></td>
+                            <td style="text-align: center;">2</td>
+                            <td>Atribut mana yang digunakan untuk menentukan link tujuan pada tag &lt;a&gt;?</td>
                             <td>
                                 <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
                                 <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Karakter apa yang digunakan untuk mengindikasikan tag penutup?</td>
-                            <td><span class="badge-status" style="background: #eff6ff; color: #2563eb;">Pilihan Ganda</span></td>
-                            <td>
-                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
-                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
-                            </td>
-                        </tr>
+                        <!-- Baris simulasi dummy data penutup agar fleksibel -->
                         <tr style="background: #f8fafc; font-style: italic;">
-                            <td style="color: #94a3b8;">4 - 10</td>
-                            <td colspan="2" style="color: #94a3b8;">Data soal nomor 4 sampai 10 disembunyikan untuk simplisitas mockup...</td>
+                            <td style="color: #94a3b8; text-align: center;">...</td>
+                            <td style="color: #94a3b8;">[Dummy Data] Sisa butir pertanyaan simulasi milik Anda otomatis tersimpan di dalam sistem...</td>
                             <td>
-                                <button type="button" disabled style="background: #e2e8f0; color: #94a3b8; cursor: not-allowed;">Edit</button>
-                                <button type="button" disabled style="background: #e2e8f0; color: #94a3b8; cursor: not-allowed; margin-right: 0;">Delete</button>
+                                <button type="button" disabled style="background: #e2e8f0; color: #94a3b8; cursor: not-allowed; opacity: 0.6;">Edit</button>
+                                <button type="button" disabled style="background: #e2e8f0; color: #94a3b8; cursor: not-allowed; opacity: 0.6; margin-right: 0;">Delete</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
 
+                <!-- Tombol Kembali ke Tests List -->
                 <div style="margin-top: 20px;">
                     <a href="../index.html"><button type="button" style="background: #e2e8f0; color: #475569;">&larr; Kembali ke Daftar Test</button></a>
                 </div>

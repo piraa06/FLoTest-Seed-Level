@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Tes - Mentor</title>
+    <title>Manajemen Tests (Mentor) - FloTest</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body class="dashboard-page">
@@ -13,11 +13,11 @@
             <div class="logo-box-sidebar">Fl</div>
             <h2>FloTest</h2>
         </div>
-        <div class="sidebar-section-title">MENU UTAMA</div>
+        <div class="sidebar-section-title">MENU MENTOR</div>
         <nav class="sidebar-menu">
             <a href="../dashboard.html" class="sidebar-link">Dashboard</a>
-            <a href="index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Daftar Tes</a>
-            <a href="create.html" class="sidebar-link">Buat Tes</a>
+            <a href="index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Tests</a>
+            <a href="create.html" class="sidebar-link">Create Test</a>
             <hr class="sidebar-divider">
             <a href="../../index.html" class="sidebar-link logout-link">Logout</a>
         </nav>
@@ -25,19 +25,24 @@
 
     <div class="dashboard-container">
         <header class="dashboard-header">
-            <h1>Daftar Modul Ujian</h1>
-            <p>Kelola status publikasi soal ujian yang sudah dibuat</p>
+            <h1>Kelola Paket Ujian Anda</h1>
+            <p>Daftar modul ujian yang Anda ampu dan distribusikan ke menti</p>
         </header>
 
         <main class="dashboard-main">
             <section class="page-content content-active-default" style="position: relative;">
-                <h2>Daftar Tes Mentor</h2>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <h2>Daftar Ujian Saya</h2>
+                    <a href="create.html"><button type="button" style="background: #2563eb; color: white;">+ Tambah Test</button></a>
+                </div>
+
                 <table>
                     <thead>
                         <tr>
-                            <th>Judul Tes</th>
+                            <th>Title</th>
                             <th>Status</th>
-                            <th>Jumlah Soal</th>
+                            <th>Questions Count</th>
+                            <th style="width: 280px;">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -45,27 +50,31 @@
                             <td>HTML Basic Test</td>
                             <td><span class="badge-status" style="background: #ecfdf5; color: #059669;">Published</span></td>
                             <td>10 Soal</td>
-                        </tr>
-                        <tr>
-                            <td>CSS Basic Test</td>
-                            <td><span class="badge-status" style="background: #fef3c7; color: #d97706;">Draft</span></td>
-                            <td>8 Soal</td>
+                            <td>
+                                <a href="questions/index.html"><button type="button" style="background: #3b82f6; color: white;">View Questions</button></a>
+                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
+                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                            </td>
                         </tr>
                         <tr>
                             <td>Responsive Design Test</td>
                             <td><span class="badge-status" style="background: #f1f5f9; color: #64748b;">Archived</span></td>
                             <td>15 Soal</td>
+                            <td>
+                               <a href="questions/index.html"><button type="button" style="background: #3b82f6; color: white;">View Questions</button></a>
+                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
+                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                            </td>
                         </tr>
                     </tbody>
-                    <tfoot>
-                        <tr style="background-color: #f8fafc; font-weight: bold;">
-                            <td style="border-top: 2px solid #e2e8f0;">Jumlah Keseluruhan Soal</td>
-                            <td colspan="2" style="border-top: 2px solid #e2e8f0; color: #2563eb; padding-left: 18px;">33 Butir Soal</td>
-                        </tr>
-                    </tfoot>
                 </table>
+
+                <div style="margin-top: 20px;">
+                    <a href="../dashboard.html"><button type="button" style="background: #e2e8f0; color: #475569;">&larr; Kembali ke Dashboard</button></a>
+                </div>
             </section>
         </main>
     </div>
+
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buat Tes Baru - Mentor</title>
+    <title>Buat Test Baru (Mentor) - FloTest</title>
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body class="dashboard-page">
@@ -13,11 +13,11 @@
             <div class="logo-box-sidebar">Fl</div>
             <h2>FloTest</h2>
         </div>
-        <div class="sidebar-section-title">MENU UTAMA</div>
+        <div class="sidebar-section-title">MENU MENTOR</div>
         <nav class="sidebar-menu">
             <a href="../dashboard.html" class="sidebar-link">Dashboard</a>
-            <a href="index.html" class="sidebar-link">Daftar Tes</a>
-            <a href="create.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Buat Tes</a>
+            <a href="index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Tests</a>
+            <a href="create.html" class="sidebar-link">Create Test</a>
             <hr class="sidebar-divider">
             <a href="../../index.html" class="sidebar-link logout-link">Logout</a>
         </nav>
@@ -25,21 +25,21 @@
 
     <div class="dashboard-container">
         <header class="dashboard-header">
-            <h1>Buat Modul Tes Baru</h1>
-            <p>Tambahkan paket soal baru ke dalam sistem</p>
+            <h1>Buat Paket Ujian Baru</h1>
+            <p>Tambahkan modul evaluasi materi ke dalam daftar kelas Anda</p>
         </header>
 
         <main class="dashboard-main">
             <section class="page-content content-active-default" style="position: relative;">
-                <h2>Form Buat Tes</h2>
+                <h2>Form Tambah Test</h2>
                 <form>
                     <div class="form-group">
-                        <label>Judul Tes</label>
-                        <input type="text" placeholder="Masukkan judul tes...">
+                        <label>Title</label>
+                        <input type="text" placeholder="Masukkan judul paket tes baru...">
                     </div>
                     <div class="form-group">
-                        <label>Deskripsi Tes</label>
-                        <textarea placeholder="Masukkan deskripsi lengkap tes..." rows="4"></textarea>
+                        <label>Description</label>
+                        <textarea placeholder="Tuliskan deskripsi ringkas mengenai cakupan materi ujian..." rows="4"></textarea>
                     </div>
                     <div class="form-group">
                         <label>Status</label>
@@ -49,10 +49,14 @@
                             <option value="Archived">Archived</option>
                         </select>
                     </div>
-                    <button type="button">Simpan</button>
+                    <div style="margin-top: 15px;">
+                        <a href="index.html"><button type="button" style="background: #2563eb; color: white;">Submit</button></a>
+                        <a href="index.html"><button type="button" style="background: #e2e8f0; color: #475569;">Batal</button></a>
+                    </div>
                 </form>
             </section>
         </main>
     </div>
+
 </body>
 </html>
