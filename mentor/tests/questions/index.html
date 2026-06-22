@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manajemen Soal (Mentor) - FloTest</title>
-    <!-- Mundur 3 folder untuk mengambil CSS utama -->
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 <body class="dashboard-page">
@@ -17,7 +16,6 @@
         <div class="sidebar-section-title">MENU MENTOR</div>
         <nav class="sidebar-menu">
             <a href="../../dashboard.html" class="sidebar-link">Dashboard</a>
-            <!-- Perbaikan: Menu Tests sekarang aktif (berwarna biru) karena Questions adalah bagian dari modul Tests -->
             <a href="../index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Tests</a>
             <a href="../create.html" class="sidebar-link">Create Test</a>
             <hr class="sidebar-divider">
@@ -32,53 +30,50 @@
         </header>
 
         <main class="dashboard-main">
-            <section class="page-content content-active-default" style="position: relative;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <section class="page-content content-active-default position-relative">
+                <div class="flex-space-between border-divider-bottom">
                     <h2>Daftar Pertanyaan (Sesuai Kuota Paket)</h2>
-                    <a href="create.html"><button type="button" style="background: #2563eb; color: white;">+ Tambah Soal</button></a>
+                    <a href="create.html"><button type="button" class="btn-primary">+ Tambah Soal</button></a>
                 </div>
 
-                <!-- Sesuai Perintah Kolom: Number, Question Text, Actions -->
                 <table>
                     <thead>
                         <tr>
-                            <th style="width: 80px; text-align: center;">Number</th>
+                            <th class="text-center width-80">Number</th>
                             <th>Question Text</th>
-                            <th style="width: 160px;">Actions</th>
+                            <th class="width-160">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td style="text-align: center;">1</td>
+                            <td class="text-center">1</td>
                             <td>Apa fungsi utama dari tag format paragraf (&lt;p&gt;) pada HTML?</td>
                             <td>
-                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
-                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                                <a href="edit.html"><button type="button" class="btn-secondary">Edit</button></a>
+                                <a href="index.html"><button type="button" class="btn-danger no-margin-right">Delete</button></a>
                             </td>
                         </tr>
                         <tr>
-                            <td style="text-align: center;">2</td>
+                            <td class="text-center">2</td>
                             <td>Atribut mana yang digunakan untuk menentukan link tujuan pada tag &lt;a&gt;?</td>
                             <td>
-                                <a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a>
-                                <a href="index.html"><button type="button" style="background: #ef4444; color: white; margin-right: 0;">Delete</button></a>
+                                <a href="edit.html"><button type="button" class="btn-secondary">Edit</button></a>
+                                <a href="index.html"><button type="button" class="btn-danger no-margin-right">Delete</button></a>
                             </td>
                         </tr>
-                        <!-- Baris simulasi dummy data penutup agar fleksibel -->
-                        <tr style="background: #f8fafc; font-style: italic;">
-                            <td style="color: #94a3b8; text-align: center;">...</td>
-                            <td style="color: #94a3b8;">[Dummy Data] Sisa butir pertanyaan simulasi milik Anda otomatis tersimpan di dalam sistem...</td>
+                        <tr class="bg-muted italic">
+                            <td class="text-muted text-center">...</td>
+                            <td class="text-muted">[Dummy Data] Sisa butir pertanyaan simulasi milik Anda otomatis tersimpan di dalam sistem...</td>
                             <td>
-                                <button type="button" disabled style="background: #e2e8f0; color: #94a3b8; cursor: not-allowed; opacity: 0.6;">Edit</button>
-                                <button type="button" disabled style="background: #e2e8f0; color: #94a3b8; cursor: not-allowed; opacity: 0.6; margin-right: 0;">Delete</button>
+                                <button type="button" class="btn-disabled opacity-06" disabled>Edit</button>
+                                <button type="button" class="btn-disabled opacity-06 no-margin-right" disabled>Delete</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
 
-                <!-- Tombol Kembali ke Tests List -->
-                <div style="margin-top: 20px;">
-                    <a href="../index.html"><button type="button" style="background: #e2e8f0; color: #475569;">&larr; Kembali ke Daftar Test</button></a>
+                <div class="border-divider-top">
+                    <a href="../index.html"><button type="button" class="btn-secondary">&larr; Kembali ke Daftar Test</button></a>
                 </div>
             </section>
         </main>
