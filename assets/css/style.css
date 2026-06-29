@@ -317,7 +317,7 @@ tr:hover td {
 }
 
 /* ==========================================================================
-   4. LOGIC ENGINE (Pure CSS Tabs Routing & Login Dropdown)
+   4. LOGIC ENGINE 
    ========================================================================== */
 .content-active-default {
     opacity: 1;
@@ -405,52 +405,6 @@ body.login-page {
     margin-bottom: 25px;
 }
 
-.dropdown-wrapper {
-    position: relative;
-    width: 100%;
-}
-
-.dropdown-state, .radio-role {
-    display: none;
-}
-
-.dropdown-select-label {
-    display: block;
-    width: 100%;
-    padding: 12px 14px;
-    background: #eef2f6;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    color: #334155;
-    font-size: 13px;
-    cursor: pointer;
-    position: relative;
-}
-
-.dropdown-select-label::after {
-    content: '▼';
-    font-size: 10px;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #64748b;
-}
-
-.dropdown-options-list {
-    display: none;
-    position: absolute;
-    top: 45px;
-    left: 0;
-    width: 100%;
-    background: white;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    margin-top: 4px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    z-index: 15;
-}
-
 .option-row {
     display: block;
     padding: 12px 14px;
@@ -463,25 +417,6 @@ body.login-page {
     background: #2563eb;
     color: white;
 }
-
-.dropdown-state:checked ~ .dropdown-options-list {
-    display: block;
-}
-
-.dropdown-select-label .text-admin,
-.dropdown-select-label .text-mentor,
-.dropdown-select-label .text-menti {
-    display: none;
-}
-
-#role-admin:checked ~ .dropdown-select-label .text-default { display: none; }
-#role-admin:checked ~ .dropdown-select-label .text-admin { display: inline; }
-
-#role-mentor:checked ~ .dropdown-select-label .text-default { display: none; }
-#role-mentor:checked ~ .dropdown-select-label .text-mentor { display: inline; }
-
-#role-menti:checked ~ .dropdown-select-label .text-default { display: none; }
-#role-menti:checked ~ .dropdown-select-label .text-menti { display: inline; }
 
 .submit-area {
     position: relative;
@@ -528,10 +463,19 @@ body.login-page {
     background: #1d4ed8;
 }
 
-#role-admin:checked ~ .submit-area .link-admin { display: block; }
-#role-mentor:checked ~ .submit-area .link-mentor { display: block; }
-#role-menti:checked ~ .submit-area .link-menti { display: block; }
+/* Style untuk tombol aksi di tabel */
+.btn-table {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+}
 
+.btn-view { background-color: #2563eb; color: white; }
+.btn-edit { background-color: #cbd5e1; color: #475569; }
+.btn-delete { background-color: #ef4444; color: white; }
 /* ==========================================================================
    5. RESPONSIVE DESIGN (Media Queries - Tablet & Mobile)
    ========================================================================== */

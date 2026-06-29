@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Soal (Mentor) - FloTest</title>
+    <title>Edit Soal HTML Basic (Mentor) - FloTest</title>
     <link rel="stylesheet" href="../../../assets/css/style.css">
 </head>
 <body class="dashboard-page">
@@ -16,8 +16,8 @@
         <div class="sidebar-section-title">MENU MENTOR</div>
         <nav class="sidebar-menu">
             <a href="../../dashboard.html" class="sidebar-link">Dashboard</a>
-            <a href="../index.html" class="sidebar-link style" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Tests</a>
-            <a href="index.html" class="sidebar-link">Create Test</a>
+            <a href="../index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Tests</a>
+            <a href="../create.html" class="sidebar-link">Create Test</a>
             <hr class="sidebar-divider">
             <a href="../../../index.html" class="sidebar-link logout-link">Logout</a>
         </nav>
@@ -30,44 +30,47 @@
         </header>
 
         <main class="dashboard-main">
-            <section class="page-content content-active-default" style="position: relative;">
+            <section class="page-content content-active-default position-relative">
                 <h2>Form Perubahan Soal</h2>
-                <form>
+                <form action="index.html" method="GET">
                     <div class="form-group">
                         <label>Question Text</label>
-                        <textarea rows="3">Apa fungsi utama dari tag format paragraf (&lt;p&gt;) pada HTML?</textarea>
+                        <textarea rows="3">Apa kepanjangan dari HTML?</textarea>
                     </div>
-                    
+
                     <div class="form-group">
                         <label>Pilihan A</label>
-                        <input type="text" value="Membuat teks berukuran besar">
+                        <input type="text" value="Hyper Text Markup Language">
                     </div>
+
                     <div class="form-group">
                         <label>Pilihan B</label>
-                        <input type="text" value="Menentukan struktur teks menjadi sebuah paragraf baru">
+                        <input type="text" value="High Text Markup Language">
                     </div>
+
                     <div class="form-group">
                         <label>Pilihan C</label>
-                        <input type="text" value="Menyisipkan gambar ke dalam layout dokumen">
+                        <input type="text" value="Hyper Text Management Language">
                     </div>
+
                     <div class="form-group">
                         <label>Pilihan D</label>
-                        <input type="text" value="Membuat link tautan halaman">
+                        <input type="text" value="Hyper Tech Markup Link">
                     </div>
 
                     <div class="form-group">
                         <label>Jawaban Benar</label>
                         <select>
-                            <option value="A">A</option>
-                            <option value="B" selected>B</option>
+                            <option value="A" selected>A</option>
+                            <option value="B">B</option>
                             <option value="C">C</option>
                             <option value="D">D</option>
                         </select>
                     </div>
 
-                    <div style="margin-top: 15px;">
-                        <a href="index.html"><button type="button" style="background: #2563eb; color: white;">Update</button></a>
-                        <a href="index.html"><button type="button" style="background: #e2e8f0; color: #475569;">Batal</button></a>
+                    <div class="border-divider-top">
+                        <button type="submit" class="btn-primary">Update</button>
+                        <a href="index.html"><button type="button" class="btn-secondary">Batal</button></a>
                     </div>
                 </form>
             </section>
@@ -75,4 +78,4 @@
     </div>
 
 </body>
-</html> 
+</html>
