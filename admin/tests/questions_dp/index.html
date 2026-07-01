@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Soal - FloTest Admin</title>
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+</head>
+<body class="dashboard-page">
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <div class="logo-box-sidebar">Fl</div>
+            <h2>FloTest</h2>
+        </div>
+        <div class="sidebar-section-title">MENU UTAMA</div>
+        <nav class="sidebar-menu">
+            <a href="../../dashboard.html" class="sidebar-link">Dashboard</a>
+            <a href="../../users/index.html" class="sidebar-link">Users</a>
+            <a href="../index.html" class="sidebar-link" style="background: #eff6ff; color: #2563eb; border-right-color: #2563eb;">Tests</a>
+            <a href="../../../index.html" class="sidebar-link logout-link">Logout</a>
+        </nav>
+    </aside>
+
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Soal Ujian: HTML Basic Test</h1>
+            <p>Kelola butir pertanyaan, pilihan ganda, dan kunci jawaban ujian</p>
+        </header>
+
+        <main class="dashboard-main">
+            <section class="page-content content-active-default" style="position: relative;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <h2>Daftar Pertanyaan (5 Soal Terdata)</h2>
+                    <a href="create.html"><button type="button" style="background: #2563eb; color: white;">+ Tambah Soal</button></a>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 60px;">Number</th>
+                            <th>Question Text</th>
+                            <th style="width: 150px;">Type</th>
+                            <th style="width: 160px;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Apa fungsi utama dari tag format paragraf (&lt;p&gt;) pada HTML?</td><td><span class="badge-status" style="background: #eff6ff; color: #2563eb;">Pilihan Ganda</span></td><td><a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a> <a href="index.html"><button type="button" style="background: #ef4444; color: white;">Delete</button></a></td></tr>
+                        <tr><td>2</td><td>Atribut mana yang digunakan untuk menentukan link tujuan pada tag &lt;a&gt;?</td><td><span class="badge-status" style="background: #eff6ff; color: #2563eb;">Pilihan Ganda</span></td><td><a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a> <a href="index.html"><button type="button" style="background: #ef4444; color: white;">Delete</button></a></td></tr>
+                        <tr><td>3</td><td>Tag HTML yang digunakan untuk membuat daftar list berurutan (menggunakan angka) adalah...</td><td><span class="badge-status" style="background: #eff6ff; color: #2563eb;">Pilihan Ganda</span></td><td><a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a> <a href="index.html"><button type="button" style="background: #ef4444; color: white;">Delete</button></a></td></tr>
+                        <tr><td>4</td><td>Manakah tag yang benar untuk menyisipkan gambar ke dalam halaman web?</td><td><span class="badge-status" style="background: #eff6ff; color: #2563eb;">Pilihan Ganda</span></td><td><a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a> <a href="index.html"><button type="button" style="background: #ef4444; color: white;">Delete</button></a></td></tr>
+                        <tr><td>5</td><td>Simbol apa yang digunakan untuk menunjukkan tag penutup dalam sintaks HTML?</td><td><span class="badge-status" style="background: #eff6ff; color: #2563eb;">Pilihan Ganda</span></td><td><a href="edit.html"><button type="button" style="background: #cbd5e1; color: #475569;">Edit</button></a> <a href="index.html"><button type="button" style="background: #ef4444; color: white;">Delete</button></a></td></tr>
+                    </tbody>
+                </table>
+
+                <div style="margin-top: 20px;">
+                    <a href="../index.html"><button type="button" style="background: #e2e8f0; color: #475569;">&larr; Kembali ke Daftar Test</button></a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
